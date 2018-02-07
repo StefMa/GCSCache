@@ -1,0 +1,10 @@
+apply plugin: guru.stefma.gcs.cache.GCSCachePlugin
+
+buildCache {
+    local {
+        enabled = false
+    }
+    remote(guru.stefma.gcs.cache.GCSBuildCache) {
+        push = true
+    }
+}
