@@ -1,3 +1,4 @@
+[![CircleCI](https://img.shields.io/circleci/project/github/StefMa/GCSCache.svg)](https://circleci.com/gh/StefMa/GCSCache)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 <!-- (TODO: Add badge for plugin-portal -> https://img.shields.io/badge/plugin%20portal-v1.2-blue.svg) -->
 
