@@ -2,7 +2,7 @@
 <!-- (TODO: Add badge for plugin-portal -> https://img.shields.io/badge/plugin%20portal-v1.2-blue.svg) -->
 
 # GCSCache
-A custom Gradle Build Cache implementation which uses Google Cloud Storage to store the cache objects.
+A custom Gradle Build Cache implementation which uses Google Cloud Storage to store the cacheable artifacts.
 
 ## Description
 Haven't heard about [Gradle's Build Cache](https://docs.gradle.org/current/userguide/build_cache.html) yet?
@@ -16,7 +16,19 @@ which can be reused the next time you do a build.
 ## How to use it
 
 ### Apply the plugin
-<!-- (TODO: Add how to apply...) -->
+To apply the plugin just put the following to the **top** of your **`settings.gradle`**:
+```gradle
+buildscript {
+  repositories {
+    maven { url "https://plugins.gradle.org/m2/" } // TODO: Check if gradlePluginPortal() is possible
+    // or
+    jcenter()
+  }
+  dependencies {
+    classpath "" // TODO: Define classpath
+  }
+}
+```
 
 ### Configuration
 Just go to your `settings.gradle` and use the following code:
